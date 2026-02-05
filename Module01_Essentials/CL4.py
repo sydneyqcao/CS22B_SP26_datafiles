@@ -10,11 +10,11 @@ dna = "ATTGGCTATACCGGCATCGGGTAGCC"
 
 # step 1: Write the function that takes in two argument and calculate (num of nucleotide)*100/(total nucleotide)
 
-def get_percent():
+#def get_percent():
 
 # step 2: modify the function above to pass in a third argument to return 2 significant figures
 
-def get_percent_2sig():
+#def get_percent_2sig():
 
 
 ##### CL4.2: Using assert to test your function
@@ -27,7 +27,7 @@ def get_percent_2sig():
 ##### CL4.3: Conditional statements
 ### Find the accession that starts with ‘a’
 
-accession_name = [‘ab56’, ‘bh84’, ‘hg84’, ‘ay97, ‘cd72’, ‘ef56’]
+accession_name = ['ab56', 'bh84', 'hg84', 'ay97', 'cd72', 'ef56']
 
 ### step 1: Write a for loop that iterates over the accession_name list 
 
@@ -37,8 +37,7 @@ accession_name = [‘ab56’, ‘bh84’, ‘hg84’, ‘ay97, ‘cd72’, ‘ef
 ##### CL4.4: if-elif-else 
 ### Write three files of accession names; one start with ‘a’, one start with ‘b’, and last one has all others accession names.
 
-accession_name = [‘ab56’, ‘bh84’, ‘hg84’, ‘ay97, ‘cd72’, ‘ef56’]
-
+accession_name = ['ab56', 'bh84', 'hg84', 'ay97', 'cd72', 'ef56']
 ### step 1: Write three files
 
 ### step 2: Iterate over the list of accession names and sort them into the correct files.
