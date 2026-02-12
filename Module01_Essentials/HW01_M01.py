@@ -21,7 +21,7 @@ Name: <Your Name>
 
 ##### Problem 3: Dictionary
 ## 1. Using the valid trimmed reads from problem 1, build a dictionary called 'base_counts' that has the total counts of A, T, C, G across all valid reads. 
-## Use a loop that iterates over the dictionary and compute and print the product of the four counts (A*C*T*G).
+## 2. Use a loop that iterates over the dictionary and compute and print the product of the four counts (A*C*T*G).
 
 
 #### Problem 4: Function and asserts
