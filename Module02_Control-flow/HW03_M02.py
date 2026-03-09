@@ -1,5 +1,5 @@
 ### CS 22B Module 02 - Homework 3
-### Name: <Your Name>
+### Name: Sydney Cao
 
 ##### Homework practicing Control flow #####
 
@@ -26,14 +26,32 @@ employees = [
 ]
 
 ### Part A: Calculate the average performance score for each employee
-
+for e in employees: 
+    scores = e["perfomance_scores"]
+    avg = sum(scores) / len(scores)
+    e["average_score"] = avg
 
 ### Part B: Classify each employee based on the average performance score and print out the classification for each employee
 ## Let's make this a function so we can reuse it in Part D
 def employee_classification (employees):
     ec_list = []
     for e in employees:
-    
+        avg = e ["average_score"]
+        if avg >= 4.5
+            classification = "Excellent"
+        elif avg >= 3.5:
+            classification = "Good"
+        else:
+            classification = "Needs Improvement"
+
+    print(e["name"], ":", classification)
+
+        ec_list.append({
+            "name": e["name"],
+            "department": e["department"],
+            "classification": classification
+        })
+
 ec_list = employee_classification(employees)
 
 
@@ -41,10 +59,22 @@ ec_list = employee_classification(employees)
 highest_salary = 0
 for e in employees:
     if e["department"]=="Engineering":
+        if e["salary"] > highest_salary:
+            highest_salary = e["salary"]
+            highest_employee = e["name"]
 
+print("Highest salary in Engineering:", highest_employee, highest_salary)
 
 ### Part D. Print a dictionary where the keys are the department names and the values are lists of employee names who belong to the "Excellent" category in each department.
 excellent_emp = {}
 ec_list = employee_classification(employees)
 
 for e in ec_list:
+    if e["classification"] == "Excellent":
+        dept = e["department"]
+
+        if dept not in excellent_emp:
+            excellent_emp[dept] = []
+
+        excellent_emp[dept].append(e["name"])
+print(excellent_emp)
